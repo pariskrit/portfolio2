@@ -1,0 +1,44 @@
+.top {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  position: relative;
+}
+
+.top__content > h1 {
+  font-size: 4rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+
+.top__content > p {
+  font-size: 2rem;
+}
+
+.top > a {
+  position: absolute;
+  bottom: 0;
+}
+.downicon {
+  font-size: 4rem !important;
+  position: absolute;
+  bottom: 0;
+  animation: move 1s ease infinite;
+  cursor: pointer;
+  color: white;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

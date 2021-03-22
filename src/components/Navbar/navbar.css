@@ -1,0 +1,58 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  padding: 30px 20px;
+
+  background-color: black;
+}
+
+a {
+  color: white;
+}
+
+.navbar__icon {
+  color: white !important;
+  margin: 0 5px;
+  transition: color 0.2s ease-in !important;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
+}
+
+.navbar ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+
+.navbar__name {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar ul li:hover > .navbar__name {
+  /* color: gray !important; */
+  transform: scaleY(1.5);
+}
+
+.navbar__name:before {
+  content: "";
+  height: 1px;
+  transition: transform 0.1s ease-in;
+}
+
+.navbar ul li:hover .navbar__name:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  background: black;
+  transform: scaleY(3.5);
+}

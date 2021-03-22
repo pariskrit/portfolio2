@@ -1,0 +1,15 @@
+.oneskill {
+  text-align: left;
+
+  padding: 10px 20px;
+  color: white;
+}
+
+.skill__bar {
+  width: 0%;
+  height: 20px;
+  background-color: rgb(0, 0, 0);
+  margin: 20px 0;
+  text-align: center;
+  border: 1px solid;
+}

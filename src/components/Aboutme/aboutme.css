@@ -1,0 +1,41 @@
+.aboutme {
+  width: 100%;
+  background-color: white;
+}
+
+.aboutme > h1 {
+  padding-top: 100px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  color: gray;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.aboutme__content {
+  display: flex;
+  justify-content: space-around;
+  padding: 70px 50px;
+}
+
+.aboutme__content > div {
+  flex: 0.6;
+  color: black;
+  line-height: 40px;
+  letter-spacing: 2px;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.aboutme__content > div > p:nth-child(1) {
+  color: gray;
+  margin: 20px 0;
+}
+.aboutme__content > img {
+  width: 30%;
+  height: 397px;
+  object-fit: cover;
+  border-radius: 55%;
+  margin: 0 30px;
+  flex: 0.4;
+}

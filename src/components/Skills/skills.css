@@ -1,0 +1,19 @@
+.skills {
+  height: 100vh;
+
+  padding-top: 100px;
+}
+
+.skills > h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.skills__skill {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
+  padding: 0 50px;
+  margin: 50px auto;
+  width: 85%;
+}

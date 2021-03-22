@@ -1,0 +1,50 @@
+.contact {
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.contact > h1 {
+  color: white;
+  font-size: 3.5rem;
+}
+
+.socialmedia {
+  display: grid;
+  grid-template-columns: auto auto;
+
+  gap: 30px;
+  width: 60%;
+  margin: 50px auto;
+}
+
+.socialmedia__block {
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 40px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.socialmedia__block:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.socialmedia__icon {
+  font-size: 3.5rem !important;
+}
+
+.facebook {
+  color: #080f67 !important;
+  font-weight: 600;
+}
+
+.linkedIn {
+  color: #084d94 !important;
+  font-weight: 600;
+}
+
+.instagram {
+  color: #544d4d;
+  font-weight: 600;
+}
