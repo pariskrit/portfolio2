@@ -4,6 +4,7 @@ import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 import PersonIcon from "@material-ui/icons/Person";
 import EqualizerIcon from "@material-ui/icons/Equalizer";
 import ContactsIcon from "@material-ui/icons/Contacts";
+import Navbaritem from "./Navbaritem";
 
 const Navbar = React.forwardRef((props, ref) => {
   const [navitems, setNavitems] = useState([
@@ -31,14 +32,13 @@ const Navbar = React.forwardRef((props, ref) => {
 
   return (
     <nav className="navbar" ref={ref}>
-      <ul>
+      <div
+        className="navbar__back"
+        style={{ top: props.showBackground ? "0" : "-100px" }}
+      ></div>
+      <ul style={{ width: props.showBackground ? "60%" : "80%" }}>
         {navitems.map((item) => (
-          <a href={item.href}>
-            <li key={item.title}>
-              {item.icon}
-              <p className="navbar__name">{item.title}</p>
-            </li>
-          </a>
+          <Navbaritem key={item} item={item} />
         ))}
       </ul>
     </nav>

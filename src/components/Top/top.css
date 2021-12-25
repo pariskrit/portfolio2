@@ -8,22 +8,27 @@
   position: relative;
 }
 
+.top__content {
+  transition: all 0.2s ease;
+}
+
 .top__content > h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   border-bottom: 1px solid white;
   padding-bottom: 10px;
 }
 
 .top__content > p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .top > a {
   position: absolute;
   bottom: 0;
 }
+
 .downicon {
-  font-size: 4rem !important;
+  font-size: 3rem !important;
   position: absolute;
   bottom: 0;
   animation: move 1s ease infinite;
@@ -40,5 +45,18 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+@media (min-width: 600px) {
+  .top__content > h1 {
+    font-size: 4rem;
+  }
+
+  .top__content > p {
+    font-size: 2rem;
+  }
+
+  .downicon {
+    font-size: 4rem !important;
   }
 }

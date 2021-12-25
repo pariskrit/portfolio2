@@ -10,22 +10,29 @@ import ExpandLessIcon from "@material-ui/icons/ExpandLess";
 function Container() {
   const skillRef = React.useRef();
   const [isAtSkills, setIsAtSkills] = React.useState(false);
+  const [showBackground, setShowBackground] = React.useState(false);
 
   React.useEffect(() => {
     const skillTop = skillRef.current.getBoundingClientRect().top;
     const container = document.querySelector(".container");
     container.onscroll = () => {
-      if (document.querySelector(".container").scrollTop >= skillTop) {
+      const container = document.querySelector(".container");
+
+      if (container.scrollTop >= skillTop) {
         setIsAtSkills(true);
       }
+
+      container.scrollTop > 2
+        ? setShowBackground(true)
+        : setShowBackground(false);
     };
   }, []);
 
   return (
     <div className="container">
+      <Navbar showBackground={showBackground} />
       <Top />
       <div className="container__contents">
-        <Navbar />
         <Aboutme />
 
         <Skills ref={skillRef} isAtSkills={isAtSkills} />

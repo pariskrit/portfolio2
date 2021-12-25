@@ -1,9 +1,11 @@
 import React from "react";
 import "./top.css";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import useFollowCursor from "../../customhooks/useFollowCursor";
 
 function Top() {
   const [name, setName] = React.useState("Pariskrit");
+  useFollowCursor("top", "top__content");
 
   const handleHoverEffect = () => {
     setName(name.split("").reverse().join(""));
