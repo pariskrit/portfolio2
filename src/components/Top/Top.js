@@ -22,7 +22,6 @@ function Top() {
         <h1 onMouseOver={handleHoverEffect} onMouseOut={handleHoverEffect}>
           {name} Moktan
         </h1>
-        <p>Resume</p>
       </div>
       <a href="#aboutme">
         <ArrowDropDownIcon className="downicon" />

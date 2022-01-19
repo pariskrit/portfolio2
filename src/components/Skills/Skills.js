@@ -8,7 +8,7 @@ const Skills = React.forwardRef(({ isAtSkills }, ref) => {
     { title: "Javascript", width: "70" },
     { title: "React", width: "70" },
     { title: "Redux", width: "50" },
-    { title: "Typescript", width: "40" },
+    { title: "Typescript", width: "70" },
   ];
 
   return (

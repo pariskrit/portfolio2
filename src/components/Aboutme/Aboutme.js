@@ -17,9 +17,8 @@ function Aboutme() {
           <p>
             I enjoy coding and developing websites.When I'm not coding you'll
             find me playing guitar or reading books.As a web developer, I enjoy
-            making things, and my mission-driven work ethic to literally change
-            the world. That's why I’m excited to make a big impact at a high
-            growth company.
+            making things, and solving problems. My mission-driven work ethic is
+            to make lives of other people easier.
           </p>
         </div>
         <img src={mypic} alt="mypic" />

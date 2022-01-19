@@ -32,13 +32,17 @@ function Contactme() {
             <p className="instagram">Follow Me</p>
           </div>
         </a>
-        <a href="github">
+        <a href="https://github.com/pariskrit" target="_blank" rel="noreferrer">
           <div className="socialmedia__block">
             <GitHubIcon className="socialmedia__icon" />
             <p>See My Work</p>
           </div>
         </a>
-        <a href="linkedin">
+        <a
+          href="https://www.linkedin.com/in/pariskrit-moktan-697bb0187/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className="socialmedia__block">
             <LinkedInIcon className="socialmedia__icon linkedIn" />
             <p className="linkedIn">Let's Connect</p>
