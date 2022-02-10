@@ -1,0 +1,42 @@
+.projects {
+  height: 100vh;
+  padding-top: 100px;
+  background-color: #17181c;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 50px;
+  color: white;
+  border-bottom: 1px solid;
+}
+
+.project_title {
+  text-align: start;
+  font-size: 65px;
+}
+
+.project_para {
+  margin: 50px 0;
+  font-size: 20px;
+  width: 60%;
+  text-align: start;
+}
+
+.project_left {
+  width: 65%;
+}
+
+.project_right {
+  width: 35%;
+}
+
+.project_right > img {
+  width: 100%;
+}
+
+.project_right > p {
+  font-size: 35px;
+  margin: 10px 0;
+}

@@ -38,7 +38,7 @@ const Navbar = React.forwardRef((props, ref) => {
       ></div>
       <ul style={{ width: props.showBackground ? "60%" : "80%" }}>
         {navitems.map((item) => (
-          <Navbaritem key={item} item={item} />
+          <Navbaritem key={item.title} item={item} />
         ))}
       </ul>
     </nav>

@@ -6,21 +6,15 @@ import Skills from "../Skills/Skills";
 import Top from "../Top/Top";
 import "./container.css";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
+import Projects from "../Projects";
 
 function Container() {
-  const skillRef = React.useRef();
-  const [isAtSkills, setIsAtSkills] = React.useState(false);
   const [showBackground, setShowBackground] = React.useState(false);
 
   React.useEffect(() => {
-    const skillTop = skillRef.current.getBoundingClientRect().top;
     const container = document.querySelector(".container");
     container.onscroll = () => {
       const container = document.querySelector(".container");
-
-      if (container.scrollTop >= skillTop) {
-        setIsAtSkills(true);
-      }
 
       container.scrollTop > 2
         ? setShowBackground(true)
@@ -34,8 +28,7 @@ function Container() {
       <Top />
       <div className="container__contents">
         <Aboutme />
-
-        <Skills ref={skillRef} isAtSkills={isAtSkills} />
+        <Projects />
         <Contactme />
       </div>
       <a href="#aboutme">

@@ -1,6 +1,7 @@
 .aboutme {
   width: 100%;
   background-color: #17181c;
+  height: 100vh;
 }
 
 .aboutme__header {
@@ -50,7 +51,7 @@
   object-fit: contain;
   margin: 10px 30px;
   flex: 0.4;
-  transition: all 0.3s ease;
+  border-radius: 50px;
 }
 
 .aboutme__hello {
