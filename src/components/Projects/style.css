@@ -1,14 +1,18 @@
 .projects {
-  height: 100vh;
   padding-top: 100px;
   background-color: #17181c;
 }
 
 .project {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 20px 50px;
   color: white;
+  height: 400px;
+}
+
+.bottom-border {
   border-bottom: 1px solid;
 }
 
@@ -25,7 +29,7 @@
 }
 
 .project_left {
-  width: 65%;
+  width: 62%;
 }
 
 .project_right {
@@ -39,4 +43,11 @@
 .project_right > p {
   font-size: 35px;
   margin: 10px 0;
+}
+
+.check {
+  position: relative;
+  font-size: 35px;
+
+  cursor: pointer;
 }
