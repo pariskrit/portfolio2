@@ -26,11 +26,11 @@ function Container() {
     <div className="container">
       <Navbar showBackground={showBackground} />
       <Top />
-      <div className="container__contents">
+      <section className="container__contents">
         <Aboutme />
         <Projects />
         <Contactme />
-      </div>
+      </section>
       <a href="#aboutme">
         <ExpandLessIcon className="up__icon" />
       </a>

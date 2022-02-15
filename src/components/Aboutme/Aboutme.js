@@ -1,6 +1,6 @@
 import React from "react";
 import "./aboutme.css";
-import mypic from "../../assets/mypic.jpg";
+import me from "../../assets/me.png";
 
 function Aboutme() {
   return (
@@ -21,7 +21,7 @@ function Aboutme() {
             to make lives of other people easier.
           </p>
         </div>
-        <img src={mypic} alt="mypic" />
+        <img src={me} alt="mypic" />
       </div>
     </div>
   );
