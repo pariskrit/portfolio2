@@ -5,13 +5,15 @@
 }
 
 .skills > h1 {
-  color: white;
+  color: #ed9c22;
+
   font-size: 3.5rem;
 }
 
 .skills__skill {
   display: grid;
   grid-template-columns: auto auto;
+  justify-content: space-evenly;
   gap: 30px;
   padding: 0 50px;
   margin: 50px auto;

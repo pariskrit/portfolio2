@@ -5,6 +5,11 @@
   color: white;
 }
 
+.oneskill > img {
+  width: 50%;
+  height: 50px;
+}
+
 .skill__bar {
   width: 0%;
   height: 20px;

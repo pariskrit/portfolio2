@@ -28,6 +28,7 @@ function Container() {
       <Top />
       <section className="container__contents">
         <Aboutme />
+        <Skills />
         <Projects />
         <Contactme />
       </section>
