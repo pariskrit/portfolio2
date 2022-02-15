@@ -16,17 +16,19 @@ function Project({ projectDetail, isLastItem }) {
       </div>
       <div className="project_right">
         <img src={image} alt="Project" />
-        <a
-          href={url}
-          onMouseOver={toggleUnderline}
-          onMouseOut={toggleUnderline}
-          className="check"
-          target="_blank"
-          rel="noreferrer"
-        >
-          CHECK PROJECT
-          <span className={`span ${showUnderline ? "underline" : ""}`}></span>
-        </a>
+        {url ? (
+          <a
+            href={url}
+            onMouseOver={toggleUnderline}
+            onMouseOut={toggleUnderline}
+            className="check"
+            target="_blank"
+            rel="noreferrer"
+          >
+            SEE PROJECT
+            <span className={`span ${showUnderline ? "underline" : ""}`}></span>
+          </a>
+        ) : null}
       </div>
     </div>
   );

@@ -3,6 +3,11 @@
   background-color: #17181c;
 }
 
+.projects > h1 {
+  color: #ed9c22;
+  font-size: 3.5rem;
+}
+
 .project {
   display: flex;
   align-items: center;

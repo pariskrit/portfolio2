@@ -3,6 +3,7 @@ import Project from "./Project";
 import shopandmall from "../../assets/shopandmall.png";
 import wpt from "../../assets/wpt.png";
 import realEstate from "../../assets/real-estate.png";
+import emi from "../../assets/emi.png";
 
 import "./style.css";
 
@@ -31,10 +32,18 @@ const projects = [
     image: realEstate,
     url: "https://realestate-app-b4cf7.web.app/",
   },
+  {
+    id: 4,
+    title: "Equipement Management International",
+    description: "A web application for a Australian company.",
+    image: emi,
+    url: "",
+  },
 ];
 function Projects() {
   return (
     <div id="projects" className="projects">
+      <h1>Projects</h1>
       {projects.map((project, index) => (
         <Project
           key={project.id}
