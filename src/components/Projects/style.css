@@ -1,11 +1,10 @@
 .projects {
   padding-top: 100px;
-  background-color: #17181c;
 }
 
 .projects > h1 {
-  color: #ed9c22;
   font-size: 3.5rem;
+  color: white;
 }
 
 .project {
@@ -23,7 +22,8 @@
 
 .project_title {
   text-align: start;
-  font-size: 65px;
+  font-size: 40px;
+  color: #696969;
 }
 
 .project_para {

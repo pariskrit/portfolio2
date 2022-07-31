@@ -1,18 +1,17 @@
 .skills {
   height: 100vh;
-  background-color: #17181c;
   padding-top: 100px;
 }
 
 .skills > h1 {
-  color: #ed9c22;
+  color: white;
 
   font-size: 3.5rem;
 }
 
 .skills__skill {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   justify-content: space-evenly;
   gap: 30px;
   padding: 0 50px;

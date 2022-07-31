@@ -9,6 +9,7 @@
 
 .container__contents {
   position: relative;
+  background-color: #000;
 }
 
 .up__icon {

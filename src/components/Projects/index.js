@@ -20,7 +20,7 @@ const projects = [
     id: 2,
     title: "Wen Projects Tool Application",
     description:
-      "This application is similar to Trello which is used project management.",
+      "This application is similar to Trello which is used for project management.",
     image: wpt,
     url: "https://wpms.netlify.app/",
   },

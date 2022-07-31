@@ -1,6 +1,5 @@
 .aboutme {
   width: 100%;
-  background-color: #17181c;
 }
 
 .aboutme__header {
@@ -13,7 +12,7 @@
 }
 
 .aboutme__header > h1 {
-  color: #ed9c22;
+  color: white;
   flex: 0.3;
   font-size: 3rem;
   font-weight: 600;
