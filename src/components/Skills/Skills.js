@@ -20,6 +20,7 @@ const Skills = ({ isAtSkills }) => {
     { title: "Typescript", img: tsIcon },
     { title: "Node", img: nodeIcon },
     { title: "MongoDB", img: mongodbIcon },
+    { title: "React Native", img: reactIcon },
   ];
   return (
     <div id="skills" className="skills">
