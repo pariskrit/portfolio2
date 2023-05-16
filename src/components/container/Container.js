@@ -5,7 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import Skills from "../Skills/Skills";
 import Top from "../Top/Top";
 import "./container.css";
-import ExpandLessIcon from "@material-ui/icons/ExpandLess";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
 import Projects from "../Projects";
 
 function Container() {
@@ -21,7 +21,6 @@ function Container() {
         : setShowBackground(false);
     };
   }, []);
-
   return (
     <div className="container">
       <Navbar showBackground={showBackground} />

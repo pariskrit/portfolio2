@@ -11,13 +11,14 @@
   margin: auto;
 }
 
-.aboutme__header > h1 {
+.aboutme__hello {
   color: white;
   flex: 0.3;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 600;
   text-align: left;
-  text-align: center;
+  margin-left: -120px;
+  margin-top: -20px;
 }
 
 .aboutme__content {
@@ -25,6 +26,7 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px 0;
+  position: relative;
 }
 .aboutme__content__title {
   flex: 0.5;
@@ -33,59 +35,29 @@
   font-weight: 600;
 }
 
-.aboutme__content > div {
+.aboutme__content__description {
   width: 55%;
   line-height: 40px;
   letter-spacing: 2px;
   font-weight: 400;
   max-height: 450px;
-  overflow-y: scroll;
-  padding:0 30px
+  background-color: #101010;
+  padding: 0 60px;
+  padding-top: 120px;
 }
 
-
-.aboutme__content > div > p:nth-child(1) {
+.aboutme__content > div > p:nth-child(2) {
   color: white;
-  margin: 10px 0;
+  margin-top: 100px;
+  margin-bottom: 40px;
 }
 .aboutme__content > img {
-  width: 35%;
+  width: 55%;
   height: 300px;
   object-fit: contain;
   margin: 10px 30px;
-  flex: 0.4;
   border-radius: 50px;
-}
-
-.aboutme__hello {
-  animation: bounce 1s ease infinite;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(8px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-.aboutme__content > div::-webkit-scrollbar {
-  width: 1em;
-}
-
-.aboutme__content > div::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
-
-.aboutme__content > div::-webkit-scrollbar-thumb{
-
-  background-color: white;
-  border-radius: 10px;
-
-
+  position: absolute;
+  top: -85px;
+  right: 0;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./top.css";
-import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import useFollowCursor from "../../customhooks/useFollowCursor";
 
 function Top() {

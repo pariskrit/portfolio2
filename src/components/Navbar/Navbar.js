@@ -1,9 +1,9 @@
 import React, { useState, useRef } from "react";
 import "./navbar.css";
-import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
-import PersonIcon from "@material-ui/icons/Person";
-import EqualizerIcon from "@material-ui/icons/Equalizer";
-import ContactsIcon from "@material-ui/icons/Contacts";
+import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
+import PersonIcon from "@mui/icons-material/Person";
+import EqualizerIcon from "@mui/icons-material/Equalizer";
+import ContactsIcon from "@mui/icons-material/Contacts";
 import Navbaritem from "./Navbaritem";
 
 const Navbar = React.forwardRef((props, ref) => {
