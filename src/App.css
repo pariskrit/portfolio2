@@ -4,6 +4,10 @@
   margin: 0;
   font-family: "Varela Round", sans-serif;
 }
+
+body {
+  cursor: none;
+}
 .App {
   text-align: center;
   background-image: url(/src/assets/background1.jpg);
@@ -13,6 +17,7 @@
 
 a {
   text-decoration: none;
+  cursor: default !important;
 }
 
 .progress-bar {
@@ -23,4 +28,25 @@ a {
   height: 10px;
   background: red;
   transform-origin: 0%;
+}
+
+.rounded {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  z-index: 1000;
+  position: absolute;
+  transition: all 0.2s ease-out;
+}
+
+.pointed {
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1000;
+  left: 13px;
+  top: 12px;
 }

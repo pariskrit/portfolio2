@@ -17,6 +17,7 @@
 
 a {
   color: white;
+  cursor: none !important;
 }
 
 .navbar__icon {
@@ -38,7 +39,6 @@ a {
   align-items: center;
   list-style: none;
   font-size: 0.8rem;
-  cursor: pointer;
   transition: all 0.2s ease-in;
 }
 
@@ -63,7 +63,7 @@ a {
     position: absolute;
     bottom: 0;
     left: 1px;
-    height: 3px;
+    height: 1px;
     width: 0;
     background-color: white;
     transition: all 0.3s ease-in;
@@ -72,5 +72,6 @@ a {
   .underline {
     width: 97%;
     background-color: white;
+    bottom: -3px;
   }
 }

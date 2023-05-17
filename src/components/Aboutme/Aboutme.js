@@ -26,7 +26,7 @@ function Aboutme() {
       className="aboutme"
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.7 }}
     >
       <div className="aboutme__header">
         {/* <h1 className="aboutme__hello">Hello!</h1> */}

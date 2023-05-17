@@ -12,7 +12,11 @@ function Navbaritem({ item }) {
         {item.icon}
         <p className="navbar__name">
           {item.title}
-          <span className={`span ${showUnderline ? "underline" : ""}`}></span>
+          <span
+            className={`span ${
+              item?.isActive || showUnderline ? "underline" : ""
+            }`}
+          ></span>
         </p>
       </li>
     </a>
