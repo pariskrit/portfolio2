@@ -5,8 +5,25 @@
   height: 100%;
   overflow-x: hidden;
   background-color: rgba(0, 0, 0, 0.6);
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
+/* chrome, safari and opera */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+/* IE and Edge */
+.container {
+  -ms-overflow-style: none;
+}
+
+/* firefox */
+.container {
+  scrollbar-width: none;
+}
 .container__contents {
   position: relative;
   background-color: #000;

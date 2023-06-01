@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Project from "./Project";
 import shopandmall from "../../assets/shopandmall.png";
 import wpt from "../../assets/wpt.png";
 import realEstate from "../../assets/real-estate.png";
 import emi from "../../assets/emi.png";
-
+import { motion, useInView } from "framer-motion/dist/framer-motion";
 import "./style.css";
 
 const projects = [
@@ -41,16 +41,41 @@ const projects = [
   },
 ];
 function Projects() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.7 });
+  const [isParentVisible, setIsParentVisible] = useState(false);
+
+  useEffect(() => {
+    if (isInView) setIsParentVisible(true);
+  }, [isInView]);
+  console.log(isInView);
   return (
-    <div id="projects" className="projects">
-      <h1>Projects</h1>
-      {projects.map((project, index) => (
-        <Project
-          key={project.id}
-          projectDetail={project}
-          isLastItem={projects.length - 1 === index}
-        />
-      ))}
+    <div id="projects" className="projects" ref={ref}>
+      <motion.h1
+        initial={false}
+        animate={{
+          opacity: isInView ? 1 : 0,
+          y: isInView ? 0 : 100,
+          rotate: isInView ? 360 : 0,
+          once: true,
+        }}
+        transition={{
+          duration: 1,
+        }}
+      >
+        Projects
+      </motion.h1>
+      <div className="project__container">
+        {projects.map((project, index) => (
+          <Project
+            key={project.id}
+            projectDetail={project}
+            isLastItem={projects.length - 1 === index}
+            isParentVisible={isParentVisible}
+            index={index + 1}
+          />
+        ))}
+      </div>
     </div>
   );
 }

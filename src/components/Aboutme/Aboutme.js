@@ -28,13 +28,6 @@ function Aboutme() {
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.7 }}
     >
-      <div className="aboutme__header">
-        {/* <h1 className="aboutme__hello">Hello!</h1> */}
-        {/* <motion.p className="aboutme__content__title" variants={cardVariants}>
-          I'm a Full-Stack Developer based in Kathmandu,Nepal.
-        </motion.p> */}
-      </div>
-
       <div className="aboutme__content">
         <div className="aboutme__content__description">
           <motion.div className="aboutme__hello" variants={cardVariants}>

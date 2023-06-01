@@ -1,6 +1,7 @@
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Container from "./components/container/Container";
-import React, { useEffect } from "react";
+import { motion } from "framer-motion/dist/framer-motion";
 
 function App() {
   const moveCursor = (e) => {

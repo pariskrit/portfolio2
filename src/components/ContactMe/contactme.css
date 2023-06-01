@@ -1,6 +1,7 @@
 .contact {
   height: 100vh;
   padding-top: 100px;
+  scroll-snap-align: start;
 }
 
 .contact > h1 {

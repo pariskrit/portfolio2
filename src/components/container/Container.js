@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import Aboutme from "../Aboutme/Aboutme";
 import Contactme from "../ContactMe/Contactme";
 import Navbar from "../Navbar/Navbar";
@@ -39,11 +39,53 @@ function Container() {
       isActive: false,
     },
   ]);
+  // const ref = useRef(window.scrollY);
+
+  // const handleNavigation = useCallback(
+  //   (e) => {
+  //     const window = e.currentTarget;
+  //     if (ref.current > window.scrollY) {
+  //       console.log("scrolling up");
+  //     } else if (ref.current < window.scrollY) {
+  //       console.log("scrolling down");
+  //     }
+  //     ref.current = window.scrollY;
+  //   },
+  //   [ref.current]
+  // );
+  // console.log(ref.current);
+  // useEffect(() => {
+  //   ref.current = window.scrollY;
+
+  //   window.addEventListener("scroll", handleNavigation);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleNavigation);
+  //   };
+  // }, [handleNavigation]);
 
   React.useEffect(() => {
     const container = document.querySelector(".container");
+    const aboutme = document.querySelector("#aboutme");
+    const projects = document.querySelector("#projects");
     container.onscroll = () => {
       const container = document.querySelector(".container");
+
+      // if (container?.scrollTop < 1200)
+      // if (container.scrollTop !== 0) {
+      //   if (container?.scrollTop < 700)
+      //     container.scrollTo({
+      //       top: 700,
+      //       behavior: "instant",
+      //     });
+
+      //   if (container?.scrollTop > 700 && container?.scrollTop < 1200)
+      //     container.scrollTo({
+      //       top: 1400,
+      //       behavior: "instant",
+      //     });
+      // }
+
       container.scrollTop > 2
         ? setShowBackground(true)
         : setShowBackground(false);
@@ -65,6 +107,10 @@ function Container() {
     <div className="container">
       <Navbar showBackground={showBackground} navItems={navitems} />
       <Top />
+      {/* <Aboutme /> */}
+      {/* <Skills /> */}
+      {/* <Projects />
+      <Contactme /> */}
       <section className="container__contents">
         <Aboutme />
         {/* <Skills /> */}

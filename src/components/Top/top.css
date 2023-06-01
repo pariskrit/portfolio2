@@ -6,6 +6,7 @@
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
   position: relative;
+  scroll-snap-align: start;
 }
 
 .top__content {

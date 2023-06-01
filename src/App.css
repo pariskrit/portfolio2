@@ -5,9 +5,14 @@
   font-family: "Varela Round", sans-serif;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   cursor: none;
 }
+
 .App {
   text-align: center;
   background-image: url(/src/assets/background1.jpg);
@@ -49,4 +54,11 @@ a {
   z-index: 1000;
   left: 13px;
   top: 12px;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: red;
 }
